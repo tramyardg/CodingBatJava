@@ -5,39 +5,25 @@ package warmup1;
  */
 public class StartOz {
     public static void main(String[] args) {
-        System.out.println(startOz("ozymandias"));
+        System.out.println(startOz("zzz"));
     }
 
     public static String startOz(String str) {
-        
-        if ((str.length() == 0)) {
-            return "";
-        }
-        if ((str.length() == 1 && str.equals("o"))) {
-            return "o";
-        }
-        if ((str.length() == 1 && str.equals("z"))) {
-            return "z";
-        }
+        //o must always be the first char
+        //z must always be the second char
+        //otherwise output is ""
 
-        if (str.substring(0, 2).equals("oz")) {
-            return "oz";
-        }
-        if ((str.substring(0, 1).equals("o"))) {
-            if (!str.substring(1, 2).equals("o")) return "o";
+        //if input is empty "" or not in from oz the output is ""
 
+        String res = "";
+        if (str.length() >= 1 && str.charAt(0) == 'o') {
+            res = res + str.charAt(0);
         }
-        if ((str.substring(1, 2).equals("z"))) {
-            if (!str.substring(0, 1).equals("z")) return "z";
+        if (str.length() >= 2 && str.charAt(1) == 'z') {
+            res = res + str.charAt(1);
         }
-        if ((str.substring(0, 1).equals("z")) && (str.substring(1, 2).equals("z"))) {
-            return "z";
-        }
-        if ((str.substring(0, 1).equals("o")) && (str.substring(1, 2).equals("o"))) {
-            return "o";
-        }
+        return res;
 
-        return "";
     }
 
 
