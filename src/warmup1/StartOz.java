@@ -5,12 +5,12 @@ package warmup1;
  */
 public class StartOz {
     public static void main(String[] args) {
-        System.out.println(startOz("ll"));
+        System.out.println(startOz("bzzymandias"));
     }
 
     public static String startOz(String str) {
 
-        if (str.substring(0, 2).equals("oz")) {
+       /* if (str.substring(0, 2).equals("oz")) {
             return "oz";
         }
         if ((str.substring(0, 1).equals("o"))) {
@@ -23,8 +23,23 @@ public class StartOz {
                 return "z";
             }
         }
-
         return "error";
+        */
+        if (!str.substring(0, 2).equals("oz")) {
+            if ((str.substring(0, 1).equals("o"))) {
+                if (!str.substring(1, 2).equals("o")) {
+                    return "o";
+                }
+            }
+            if ((str.substring(1, 2).equals("z"))) {
+                if (!str.substring(0, 1).equals("z")) {
+                    return "z";
+                }
+            }
+        }
+
+
+        return "oz";
     }
 
 
