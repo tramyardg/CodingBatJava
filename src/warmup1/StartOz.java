@@ -5,7 +5,11 @@ package warmup1;
  */
 public class StartOz {
     public static void main(String[] args) {
+        System.out.println("");
+    }
 
+    public static String startOz(String str) {
+        return "";
     }
 
 
