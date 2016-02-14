@@ -6,3 +6,9 @@ include the second only if it is 'z', so "ozymandias" yields "oz".
 startOz("ozymandias") → "oz"
 startOz("bzoo") → "z"
 startOz("oxx") → "o"
+
+startOz("o") → "o"
+startOz("abc") → ""
+startOz("") → ""
+startOz("zoo") → ""
+startOz("zzzz") → "z"
