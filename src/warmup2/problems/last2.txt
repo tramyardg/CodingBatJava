@@ -6,7 +6,7 @@ last 2 chars of the string,
 so "hixxxhi" yields 1 (we won't count the end substring). 
 
 last2("hi xx hi") → 1               xx
-last2("xaxxaxaxx") → 1            xx
+last2("xaxx a xaxx") → 1            xaxx
 last2("ax xx a ax x") → 2           ax ax
 last2("xx a xx a xx axx") → 3       xx xx xx
 last2("xaxaxaxx") → 0

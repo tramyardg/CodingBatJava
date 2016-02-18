@@ -14,7 +14,7 @@ public class StringTimes {
             //res = res + str;
             // this is add and assignment operator.
             // +=
-            res += str;
+            res += str; //res = res + str;
         }
 
 

@@ -5,17 +5,9 @@ package warmup2;
  */
 public class Array123 {
     public static void main(String[] args) {
-        //int[] arr = {1, 1, 2, 1, 2, 3};
         int[] arr = {1, 1, 2, 1, 2, 3};
         //          (0, 1, 2, 3, 4, 5)
-        //pos[1] = (0,1,3) position of 1 in the list
-        //       = (0,1,3) + 1
-        //       = (1,2,4)
-        //pos[2] = (2,4)
         System.out.println(array123(arr));
-        System.out.println(arr.length);
-
-
     }
 
     public static boolean array123(int[] a) {

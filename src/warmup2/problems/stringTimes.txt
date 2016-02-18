@@ -5,3 +5,28 @@ return a larger string that is n copies of the original string.
 stringTimes("Hi", 2) → "HiHi"
 stringTimes("Hi", 3) → "HiHiHi"
 stringTimes("Hi", 1) → "Hi"
+
+str = "hi"; n = 3
+res = "";
+
+i = 0
+0 < 3 = true
+
+res = res + str -> "hi"
+increment i
+
+i = 1
+1 < 3 = true
+
+res = res + str -> "hihi"
+increment i
+
+i = 2
+2 < 3 = true
+
+res = res + str -> "hihihi"
+increment i
+
+i = 3
+3 < 3 = false
+stops here
