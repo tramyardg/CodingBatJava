@@ -25,8 +25,8 @@ public class Array123 {
          */
         if (a.length >= 3) {
             for (int i = 0; i <= a.length - 2; i++) {
-                if (a[i] == 1) {
-                    if (a[i + 1] == 2) {
+                if (a[i] == 1) {//a[0]->1
+                    if (a[i + 1] == 2) {//1
                         if (a[i + 1 + 1] == 3) {
                             return true;
                         }
