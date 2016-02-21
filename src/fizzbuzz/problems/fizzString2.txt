@@ -13,7 +13,4 @@ fizzString2(1) → "1!"
 fizzString2(2) → "2!"
 fizzString2(3) → "Fizz!"
 
-public String[] fizzArray2(int n) {
-
-}
 
