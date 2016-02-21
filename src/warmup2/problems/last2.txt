@@ -5,17 +5,17 @@ last 2 chars of the string,
 
 so "hixxxhi" yields 1 (we won't count the end substring). 
 
-last2("hi xx hi") → 1               xx
-last2("xaxx a xaxx") → 1            xaxx
-last2("ax xx a ax x") → 2           ax ax
-last2("xx a xx a xx axx") → 3       xx xx xx
-last2("xaxaxaxx") → 0
-last2("xx xx") → 2                  xxxx
+last2("hixx hi") → 1
+last2("xaxxaxa xx") → 1
+last2("axxxaa xx") → 2
+last2("xxaxxaxxa xx") → 3
+last2("xaxaxa xx") → 0
+last2("xx xx") → 2
 
-last2("1312 1312") → 1              1312
-last2("1 12 12") → 1                12
-last2("13121311") → 0
-last2("1 71 71 71") → 2             71
+last2("131213 12") → 1
+last2("112 12") → 1
+last2("131213 11") → 0
+last2("17171 71") → 2
 
 last2("hi") → 0
 last2("h") → 0
