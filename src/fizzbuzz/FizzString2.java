@@ -6,7 +6,6 @@ package fizzbuzz;
 public class FizzString2 {
     public static void main(String[] args) {
         System.out.println(fizzString2(23));
-        System.out.println((15 % 3) == 0);
     }
 
     public static String fizzString2(int n) {
