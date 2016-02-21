@@ -6,7 +6,6 @@ package warmup2;
 public class Array123 {
     public static void main(String[] args) {
         int[] arr = {1, 1, 2, 1, 2, 3};
-        //          (0, 1, 2, 3, 4, 5)
         System.out.println(array123(arr));
     }
 
@@ -17,8 +16,8 @@ public class Array123 {
          */
         if (a.length >= 3) {
             for (int i = 0; i <= a.length - 2; i++) {
-                if (a[i] == 1) {//a[0]->1
-                    if (a[i + 1] == 2) {//1
+                if (a[i] == 1) {
+                    if (a[i + 1] == 2) {
                         if (a[i + 1 + 1] == 3) {
                             return true;
                         }
