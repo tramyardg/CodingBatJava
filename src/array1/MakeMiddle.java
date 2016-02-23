@@ -9,7 +9,6 @@ public class MakeMiddle {
     public static void main(String[] args) {
         int[] arr = {7, 1, 2, 3, 4, 9};
         //           0 1 2 3
-        System.out.println(arr.length / 2);
         System.out.println(Arrays.toString(makeMiddle(arr)));
     }
 
