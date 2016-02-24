@@ -7,3 +7,8 @@ The "yak" strings will not overlap.
 stringYak("yakpak") → "pak"
 stringYak("pakyak") → "pak"
 stringYak("yak123ya") → "123ya"
+stringYak("yak") → ""
+stringYak("yakxxxyak") → "xxx"
+stringYak("HiyakHi") → "HiHi"
+stringYak("xxxyakyyyakzzz") → "xxxyyzzz"
+
