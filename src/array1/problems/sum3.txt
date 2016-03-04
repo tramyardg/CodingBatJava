@@ -6,4 +6,3 @@ sum3({7, 0, 0}) → 7
 
 public int sum3(int[] nums) {
 
-w
