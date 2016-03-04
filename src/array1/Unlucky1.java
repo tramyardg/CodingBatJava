@@ -15,7 +15,7 @@ public class Unlucky1 {
                 return true;
             }
             if((nums[1]==1&&nums[2]==3)){
-                return true; 
+                return true;
             }
             if((nums[nums.length-2]==1)&&((nums[nums.length-1]==3))) {
                 return true;

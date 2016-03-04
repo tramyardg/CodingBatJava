@@ -5,7 +5,7 @@ package array1;
  */
 public class SameFirstLast {
     public static void main(String[] args) {
-        int arr[] = {1};
+        int arr[] = {1,2,3,1};
         System.out.println(sameFirstLast(arr));
 
     }
