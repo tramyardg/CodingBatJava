@@ -3,7 +3,7 @@ package warmup1;
 /**
  * Created by RAYMART on 2016-02-14.
  */
-public class SumDouble {
+class SumDouble {
     public static void main(String[] args) {
         System.out.println(sumDouble(2, 2));
     }

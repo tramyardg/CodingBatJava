@@ -3,7 +3,7 @@ package warmup1;
 /**
  * Created by RAYMART on 2016-02-14.
  */
-public class LastDigit {
+class LastDigit {
     public static void main(String[] args) {
         System.out.println(lastDigit(10, 0));
     }
