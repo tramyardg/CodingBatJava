@@ -14,19 +14,13 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-
-        MaxEnd3 m = new MaxEnd3();
-        int[] arr = {2, 11, 3, 9};
-//        System.out.println(Arrays.toString(m.maxEnd3(arr)));
         
-        MakeEnds me = new MakeEnds();
-//        System.out.println(Arrays.toString(me.makeEnds(arr)));
+       int[] a = {5,4};
+       int[] b ={2,3,7};
+       Make2 m2 = new Make2();
+       
+       System.out.println(Arrays.toString(m2.make2(a, b)));
+      
         
-        PlusTwo pt = new PlusTwo();
-        int[] a = {1,2}; int[] b = {3,4};
-//        System.out.println(Arrays.toString(pt.plusTwo(a, b)));
-        
-        MaxTriple mt = new MaxTriple();
-        System.out.println(mt.maxTriple(arr));
     }
 }
