@@ -5,17 +5,16 @@
  */
 package array2;
 
-import java.util.Arrays;
-
-
 /**
  *
  * @author RAYMARTHINKPAD
  */
-public class Array2main {
-    public static void main(String[] args) {
-        No14 n = new No14();
-        int[] nums = {4,4,2};
-        System.out.println(n.no14(nums));
+public class FizzArray {
+    public int[] fizzArray(int n) {
+        int[] array = new int[n];
+        for(int i = 0; i < n; i++) {
+            array[i]=i;
+        }
+        return array;
     }
 }
