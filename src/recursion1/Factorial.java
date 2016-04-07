@@ -12,7 +12,6 @@ package recursion1;
 public class Factorial {
 
     public int factorial(int n) {
-        int f = 0;
         /**
          * If the given number is 1 which is the base case.
          */
@@ -20,10 +19,8 @@ public class Factorial {
             return 1;
         }
         /**
-         * 
+         * Think about stacking.
          */
-        System.out.println("n=" + n);
-        f = n * factorial(n-1);
-        return f;
+        return n * factorial(n-1);
     }
 }
