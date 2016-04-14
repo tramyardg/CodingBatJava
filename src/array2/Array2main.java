@@ -14,10 +14,9 @@ import java.util.Arrays;
  */
 public class Array2main {
     public static void main(String[] args) {
-        ModThree mt = new ModThree();
-        int[] nums2 = {2,1,2,5};
-        System.out.println(mt.modThree(nums2));
-        
+        Post4 p = new Post4();
+        int[] a = {4, 4, 1, 2, 3};
+        System.out.println(Arrays.toString(p.post4(a)));
         
     }
 }
