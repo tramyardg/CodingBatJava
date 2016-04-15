@@ -14,9 +14,11 @@ import java.util.Arrays;
  */
 public class Array2main {
     public static void main(String[] args) {
-        Post4 p = new Post4();
-        int[] a = {4, 4, 1, 2, 3};
-        System.out.println(Arrays.toString(p.post4(a)));
+        WithoutTen w = new WithoutTen();
+        int[] a = {1,10,10,2};//1,2,0,0
+        System.out.println(": "+Arrays.toString(a) + "-> [1, 2, 0, 0]");
+
+        System.out.println(Arrays.toString(w.withoutTen(a)));
         
     }
 }
