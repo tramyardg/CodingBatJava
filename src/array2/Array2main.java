@@ -14,9 +14,10 @@ import java.util.Arrays;
 public class Array2main {
 
     public static void main(String[] args) {
-        Sum67 s = new Sum67();
-        int[] nums = {6, 7, 1, 6, 7, 7};
-        System.out.println(s.sum67(nums));
+        WithoutTen wt = new WithoutTen();
+        int[] nums = {10,2,2,10};
+        System.out.println(Arrays.toString(wt.withoutTen(nums)));
+                
     }
 
     
