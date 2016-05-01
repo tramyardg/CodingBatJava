@@ -20,7 +20,7 @@ public class Sum67 {
                 nums[i + 1] = 0;
             } else if (nums[i] == 6) {
                 // only works when the sequence starts 
-                // with 0, a number that starts with
+                // with 6, a number that starts with
                 // 7 is left untouched
                 // while the next number is not 7
                 // move to the next element 
