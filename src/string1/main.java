@@ -12,8 +12,7 @@ package string1;
 public class main {
 
     public static void main(String[] args) {
-        MiddleThree mt = new MiddleThree();
-
-        System.out.println(mt.middleThree("Chocolate"));
+        SeeColor sc = new SeeColor();
+        System.out.println(sc.seeColor("blueTimes"));
     }
 }
