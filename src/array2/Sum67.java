@@ -1,5 +1,7 @@
 package array2;
 
+import java.util.Arrays;
+
 
 /**
  *
@@ -34,6 +36,8 @@ public class Sum67 {
                     nums[i + 1] = 0;
                     i++;
                 }
+                // while loop runs until the condition is met
+                // no need to add - 1 in the for loop
                 // [1, 0, 0, 0, 0, 7, 2]
                 // the array is left with 7
                 // to initialize to 0
