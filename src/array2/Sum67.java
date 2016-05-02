@@ -34,6 +34,7 @@ public class Sum67 {
                     nums[i + 1] = 0;
                     i++;
                 }
+                // [1, 0, 0, 0, 0, 7, 2]
                 // the array is left with 7
                 // to initialize to 0
                 while (nums[i + 1] == 7) {
