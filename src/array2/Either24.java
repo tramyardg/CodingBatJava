@@ -21,7 +21,7 @@ public class Either24 {
             // in the same array next to each other 
             // then the count is one
             // which means this is false
-            // thus, the have same count value
+            // thus, they have same count value
             // return true if the array contains 
             // two 2s or two 4s next to each
             // other but NOT BOTH
@@ -32,6 +32,7 @@ public class Either24 {
                 count2++;
                 cond = true;
             }
+			// fours and twos in the same array
             if (count4 == count2) {
                 cond = false;
             }
