@@ -11,7 +11,11 @@ package logic1;
  */
 public class main {
     public static void main(String[] args) {
-        Lessby10 lb = new Lessby10();
-        System.out.println(lb.lessBy10(11, 1, 7));
+        //    redTicket(2, 2, 2) → 10	
+        //    redTicket(2, 2, 1) → 0	
+        //    redTicket(0, 0, 0) → 5	
+        //    redTicket(2, 0, 0) → 1
+        RedTicket rt = new RedTicket();
+        System.out.println(rt.redTicket(2, 2, 1));
     }
 }
