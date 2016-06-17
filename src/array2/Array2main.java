@@ -12,12 +12,10 @@ import java.util.Arrays;
  * @author RAYMARTHINKPAD
  */
 public class Array2main {
-
     public static void main(String[] args) {
-        WithoutTen wt = new WithoutTen();
-        int[] nums = {10,2,2,10};
-        System.out.println(Arrays.toString(wt.withoutTen(nums)));
-                
+      IsEverywhere ie = new IsEverywhere();
+      int[] nums = {1,2,1,3,4};
+      System.out.println(ie.isEverywhere(nums, 1));
     }
 
     
