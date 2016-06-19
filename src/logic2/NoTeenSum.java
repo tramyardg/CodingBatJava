@@ -15,10 +15,9 @@ public class NoTeenSum {
     
     public static int fixTeen(int n) {
         if(n >= 13 && n <= 19) {
-            int modTeen = n%5;
-            if(modTeen > 1) {
+            if(n%5 > 1) {
                 return 0;
-            } 
+            }
         }
         return n;
     }
