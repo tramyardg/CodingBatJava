@@ -5,8 +5,6 @@ package logic2;
  * @author RAYMARTHINKPAD
  */
 public class BlackJack {
-
-    
     public int blackjack(int a, int b) {
         if (a > 21 && b > 21) {
             return 0;
@@ -17,6 +15,8 @@ public class BlackJack {
         if (b > 21) {
             return a;
         }
+		// you can actually do calculation
+		// at if condition statements
         if ((21 - a) <= (21 - b)) {
             return a;
         }
