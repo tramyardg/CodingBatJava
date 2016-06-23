@@ -7,9 +7,9 @@ package logic2;
 public class RoundSum {
 
     public static void main(String[] args) {
-        System.out.println(roundSum(6,4,4));
+        System.out.println(roundSum(6, 4, 4));
     }
-    
+
     public static int roundSum(int a, int b, int c) {
         return round10(a) + round10(b) + round10(c);
     }

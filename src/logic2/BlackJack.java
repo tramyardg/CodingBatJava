@@ -5,6 +5,7 @@ package logic2;
  * @author RAYMARTHINKPAD
  */
 public class BlackJack {
+
     public int blackjack(int a, int b) {
         // clearer solution
         if (a > 21 && b <= 21) {
