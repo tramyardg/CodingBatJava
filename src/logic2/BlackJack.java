@@ -6,23 +6,17 @@ package logic2;
  */
 public class BlackJack {
     public int blackjack(int a, int b) {
+        // clearer solution
+        if (a > 21 && b <= 21) {
+            return b;
+        }
+        if (a <= 21 && b > 21) {
+            return a;
+        }
         if (a > 21 && b > 21) {
             return 0;
         }
-        if (a > 21) {
-            return b;
-        }
-        if (b > 21) {
-            return a;
-        }
-		// you can actually do calculation
-		// at if condition statements
-        if ((21 - a) <= (21 - b)) {
-            return a;
-        }
-        if ((21 - a) >= (21 - b)) {
-            return b;
-        }
-        return 0;
+        // else they are both less than 21
+        return Math.max(a, b);
     }
 }

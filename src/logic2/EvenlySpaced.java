@@ -7,39 +7,25 @@ package logic2;
 public class EvenlySpaced {
 
     /**
-     * evenlySpaced(10, 9, 11) → true	
      * @param a
      * @param b
      * @param c
-     * @return 
+     * @return
      */
     public boolean evenlySpaced(int a, int b, int c) {
-        boolean cond = false;
+        // you need to find the max
+        // minimum and the middle number 
+        // then you can find the difference
+        // between mid and min, and mid and max
+        int max = Math.max(Math.max(a, b), c);
+        int min = Math.min(Math.min(a, b), c);
 
-        if (a == b && b == c && c == a) {
-            cond = true;
-        }
-        if (c > b && b > a && c > a) {
-            if (c - b == b - a) {
-                cond = true;
-            }
-        }
-        if (b < a && b < c) {
-            if (a > c) {
-                if (a - b == c && b + c == a) {
-                    cond = true;
-                }
-            } else if (c - a == a - b) {
-                cond = true;
-            }
-        }
-        if (b > a && b > c) {
-            if (b - a == c && b - c == a) {
-                cond = true;
-            }
-        }
+        int mid = Math.min(Math.max(a, b), c);
+        int mid2 = Math.max(Math.min(a, b), c);
 
-        return cond;
+        return Math.abs(mid - max) == Math.abs(mid - min)
+                || Math.abs(mid2 - max) == Math.abs(mid2 - min);
+
     }
 
 }
