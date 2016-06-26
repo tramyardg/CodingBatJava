@@ -6,21 +6,23 @@ package logic2;
  */
 public class MakeChocolate {
 
-    public int makeChocolate(int small, int big, int goal) {
-		if(big*5+small==goal) {
-			return small;
-		}
-		  // if(goal%5==0&&big*5+small>goal) {
-		  //   return goal-5;
-		  // }
-		if(goal%5>small) {
-			return -1;
-		}
-		if(big*5+small>goal) {
-			return goal%5; 
-		}
-		return -1;	
-	}
+    private final int BIG_SIZE = 5;
 
+    public int makeChocolate(int small, int big, int goal) {
+        // goal / BIG_SIZE : to see how many big is needed
+        // if there is a remainder of goal / BIG_SIZE 
+        // then take the small instead
+        // multiply this small to the BIG_SIZE
+        // the result is substracted to the goal
+        int s = goal - Math.min(big, goal / BIG_SIZE) * BIG_SIZE;
+        // if the small and the big needed is less than the goal
+        // and if the remainder of goal and BIG_SIZE is greater than
+        // small then it can't be done
+        if (goal % BIG_SIZE > small || big * BIG_SIZE + small < goal) {
+            s = -1;
+        }
+
+        return s;
+    }
 
 }
