@@ -8,6 +8,7 @@ import java.util.Arrays;
  */
 public class IsEverywhere {
 
+    // TO DO:
     public boolean isEverywhere(int[] nums, int val) {
         int count = 0;
         boolean cond = false;
