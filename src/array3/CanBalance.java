@@ -24,6 +24,8 @@ public class CanBalance {
             } else {
                 rightSum = rightSum + nums[div];
             }
+            // you don't even need a for loop?
+            // as long as you know the mid point
             if (rightSum == leftSum || leftSum + nums[nums.length - 2] == nums[nums.length - 1]) {
                 cond = true;
             }
