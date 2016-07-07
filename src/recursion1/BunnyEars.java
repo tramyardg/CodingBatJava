@@ -6,7 +6,11 @@ package recursion1;
  */
 public class BunnyEars {
 
-    public int bunnyEars(int bunnies) {
+    public static void main(String[] args) {
+        System.out.println(bunnyEars(3));
+    }
+
+    public static int bunnyEars(int bunnies) {
         if (bunnies == 0) {
             return 0;
         }
@@ -19,6 +23,5 @@ public class BunnyEars {
     // 2 + bunnies 2 - 1 =      [2] + bunnies(1)
     // bunnies == 0 false
     // 2 + bunnies 1-1 =        [2] + bunnies(0)
-    
 
 }
