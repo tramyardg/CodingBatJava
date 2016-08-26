@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package string2;
 
 public class StarOut {
@@ -31,3 +32,39 @@ public class StarOut {
 	}
 
 }
+=======
+package string2;
+
+public class StarOut {
+	public static void main(String[] args) {
+		String str = "ab*cd";
+		System.out.println(starOut(str));
+	}
+
+	
+	
+	public static String starOut(String str) {
+		String newStr = "";
+		for(int i = 0; i < str.length(); i++) {
+			// skips a character that comes before and after a star
+			if(str.charAt(i) == '*') {
+				continue;
+			}
+			if((i > 0 && str.charAt(i - 1) == '*')) {
+				continue;
+			}
+			if(i < str.length() - 1 && str.charAt(i + 1) == '*') {
+				continue;
+			}
+			newStr += str.charAt(i);
+		}
+		return newStr;
+	}
+
+}
+
+
+
+
+
+>>>>>>> cee240cf962850d19919db6f45a9f0b2a06be54b
