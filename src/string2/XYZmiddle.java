@@ -13,13 +13,25 @@ public class XYZmiddle {
 	}
 
 	public static boolean xyzMiddle(String str) {
+		int count = 0;
+		for(int i = 0; i < str.length(); i++) {
+			
+			if(str.charAt(i)=='x'&&str.charAt(i+1)=='y'&&str.charAt(i+2)=='z') {
+				count++;
+			}
+			
+			
+		}
+		System.out.println("count: " + count);
 		
 		boolean cond = false;
-		if(str.isEmpty() || str.length() < 2) {
+		if(str.isEmpty() || str.length() <= 2) {
 			return false;
 		}
 		String newStr  = str;
-		if(str.length() > 9 && str.substring(0,3).equals("xyz") && str.substring(str.length()-3, str.length()).equals("xyz")) {
+		
+		
+		if(str.length() > 9) {
 			newStr = "";
 			for(int i = 3; i < str.length()-3; i++) {
 				
@@ -28,8 +40,6 @@ public class XYZmiddle {
 			}
 		}
 		
-//		System.out.println(newStr);
-		
 		int strLengthMinus1 = newStr.length() - 1;
 		
 		int lastIndexOfx = newStr.lastIndexOf('x');
@@ -37,11 +47,6 @@ public class XYZmiddle {
 		
 		int numBack = strLengthMinus1 - lastIndexOfz;
 		int decidingFactor = Math.abs(lastIndexOfx - numBack);
-		
-//		System.out.println("lastIndexOfx: "+ lastIndexOfx);
-//		System.out.println("lastIndexOfz: "+ lastIndexOfz);
-//
-//		System.out.println("deciding number <= 1: " + decidingFactor);
 		
 		if(decidingFactor <= 1) {
 			return true;
