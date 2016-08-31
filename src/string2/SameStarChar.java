@@ -7,8 +7,10 @@ package string2;
 public class SameStarChar {
 
     public static void main(String[] agrs) {
-        String str = "*xa*a*a";
-        System.out.println(sameStarChar(str));
+//        String str = "*xa*a*a";
+        String str = "12*2*3*";
+//        System.out.println(sameStarChar(str));
+        System.out.println(sameStarChar2(str));
     }
 
     /**
@@ -49,4 +51,63 @@ public class SameStarChar {
         }
         return cond;
     }
+    
+    /**
+     * 
+     * @param str 
+     * @return 
+     */
+	public static boolean sameStarChar2(String str) {
+		// this is only to determine our starting index
+		// and ending index if ever there are stars
+		// in front and at the end of our string.
+		// you can totally forget and starts at 1
+		// and ends with string length - 1
+		int startIndex = 0;
+		int endIndex = str.length();
+		if (str.charAt(0) == '*') {
+			startIndex = 1;
+		}
+		if (str.charAt(str.length() - 1) == '*') {
+			endIndex = str.length() - 1;
+		}
+
+		// we don't actually need to count the number
+		// stars and the number of expected solution
+		// just return right away
+		if (str.length() >= 3) {
+			for (int i = startIndex; i < endIndex; i++) {
+				if (str.charAt(i) == '*') {
+					if (str.charAt(i - 1) != str.charAt(i + 1)) {
+						return false;
+					}
+				}
+			}
+		}
+
+		return true;
+	}
+	
+	public static boolean sameStarChar3(String str) {
+		// this solution does not count the number of
+		// expected pattern given the number of star
+		// they focus directly from the second char
+		// and the last char - 1
+		for(int i = 1; i < str.length() - 1; i++) {
+			if(str.charAt(i)=='*') {
+				if(str.charAt(i-1)!=str.charAt(i+1)) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+    
+    
+    
+    
+    
+    
+    
+    
 }
