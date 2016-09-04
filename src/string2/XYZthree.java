@@ -23,7 +23,7 @@ public class XYZthree {
                         return true;
                     }
                 }
-				// return true if xyz is found in the front
+                // return true if xyz is found in the front
                 if (str.indexOf(".") > str.indexOf("x")) {
                     if (str.charAt(i) == 'x' && str.charAt(i + 1) == 'y' && str.charAt(i + 2) == 'z') {
                         return true;
