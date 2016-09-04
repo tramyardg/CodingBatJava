@@ -7,7 +7,7 @@ package string2;
 public class MixString {
 
     public static void main(String[] args) {
-        String a = "Long";
+        String a = "Lo";
         String b = "So";
 
         System.out.println(mixString(a, b));
@@ -16,11 +16,9 @@ public class MixString {
     public static String mixString(String a, String b) {
 
         int diffLength = Math.abs(a.length() - b.length());
-        String leftOver = "";
+        String leftOver;
 
-        if (a.length() == b.length()) {
-            leftOver = "";
-        } else if (a.length() > b.length()) {
+        if (a.length() > b.length()) {
             leftOver = a.substring(b.length());
         } else {
             diffLength = 0;
