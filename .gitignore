@@ -52,7 +52,7 @@ Temporary Items
 /bin/
 /target/
 
-.classpath
-.project
-/org.eclipse.m2e.core.prefs/
-/org.eclipse.jdt.core.prefs/
+/.classpath
+/.project
+/.settings/org.eclipse.m2e.core.prefs
+/.settings/org.eclipse.jdt.core.prefs
