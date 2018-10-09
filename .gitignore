@@ -50,3 +50,9 @@ Temporary Items
 /OOP/nbproject/private/
 /dist/
 /bin/
+/target/
+
+.classpath
+.project
+/org.eclipse.m2e.core.prefs/
+/org.eclipse.jdt.core.prefs/
